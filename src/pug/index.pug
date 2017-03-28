@@ -1,0 +1,643 @@
+extends layout.pug
+
+block content
+  .page-wrapper
+    .preloader
+    header.main-header
+      .header-top
+        .auto-container
+          .clearfix
+            .top-left
+              ul.clearfix
+                li
+                  span.icon.flaticon-technology-1
+                  | +04 2345 6789
+                li
+                  span.icon.flaticon-interface
+                  | info@podgorica.com
+            .top-right
+              .social-icon
+                a(href='#')
+                  span.fa.fa-facebook
+                a(href='#')
+                  span.fa.fa-twitter
+                a(href='#')
+                  span.fa.fa-google-plus
+                a(href='#')
+                  span.fa.fa-pinterest-p
+                a(href='#')
+                  span.fa.fa-youtube-play
+      .main-box
+        .auto-container
+          .outer-container.clearfix
+            .logo-box
+              .logo
+                a(href='index.html')
+                  img(src='images/logo.png', alt='')
+            .nav-outer.clearfix
+              nav.main-menu
+                .navbar-header
+                  button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                .navbar-collapse.collapse.clearfix
+                  ul.navigation.clearfix
+                    li.current.dropdown
+                      a(href='#') Home
+                      ul
+                        li
+                          a(href='index.html') Homepage One
+                        li
+                          a(href='index-2.html') Homepage Two
+                        li
+                          a(href='index-3.html') Homepage Three
+                        li.dropdown
+                          a(href='#') Headers Style
+                          ul
+                            li
+                              a(href='index.html') Header Style One
+                            li
+                              a(href='index-2.html') Header Style Two
+                            li
+                              a(href='index-3.html') Header Style Three
+                    li.dropdown
+                      a(href='#') AboutUs
+                      ul
+                        li
+                          a(href='about.html') About Us
+                        li
+                          a(href='our-team.html') Our Team
+                        li.dropdown
+                          a(href='#') Events
+                          ul
+                            li
+                              a(href='event.html') Event
+                            li
+                              a(href='event-single.html') Event Single
+                        li
+                          a(href='error-page.html') Error Page
+                    li
+                      a(href='services.html') Services
+                    li.dropdown
+                      a(href='#') Projects
+                      ul
+                        li
+                          a(href='project.html') Our Projects
+                        li
+                          a(href='project-single.html') Project Details
+                    li.dropdown
+                      a(href='#') Blog
+                      ul
+                        li
+                          a(href='blog-grid.html') Our Blog
+                        li
+                          a(href='blog-detail.html') Blog Detail
+                    li.dropdown
+                      a(href='#') Shop
+                      ul
+                        li
+                          a(href='shop.html') Shop
+                        li
+                          a(href='shop-single.html') Shop Single
+                        li
+                          a(href='shopping-cart.html') Shopping Cart
+                        li
+                          a(href='checkout.html') Checkout
+                    li
+                      a(href='contact.html') Contactus
+              .btn-outer
+                a.theme-btn.quote-btn.btn-style-one(href='donate.html') DONATE
+    section.main-slider(data-start-height='850', data-slide-overlay='yes')
+      .tp-banner-container
+        .tp-banner
+          ul
+            li(data-transition='fade', data-slotamount='1', data-masterspeed='1000', data-thumb='images/main-slider/image-1.jpg', data-saveperformance='off', data-title='Awesome Title Here')
+              img(src='images/main-slider/image-1.jpg', alt='', data-bgposition='center top', data-bgfit='cover', data-bgrepeat='no-repeat')
+              .tp-caption.sfl.sfb.tp-resizeme(data-x='left', data-hoffset='200', data-y='center', data-voffset='-110', data-speed='1500', data-start='500', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.01', data-endelementdelay='0.3', data-endspeed='1200', data-endeasing='Power4.easeIn')
+                h3 Make this world
+              .tp-caption.sfl.sfb.tp-resizeme(data-x='left', data-hoffset='200', data-y='center', data-voffset='-40', data-speed='1500', data-start='500', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.01', data-endelementdelay='0.3', data-endspeed='1200', data-endeasing='Power4.easeIn')
+                h2 the better place
+              .tp-caption.sfr.sfb.tp-resizeme(data-x='left', data-hoffset='400', data-y='center', data-voffset='20', data-speed='1500', data-start='500', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.01', data-endelementdelay='0.3', data-endspeed='1200', data-endeasing='Power4.easeIn')
+                .text.text-center Start recycling today and protect our environment
+              .tp-caption.sfr.sfb.tp-resizeme(data-x='left', data-hoffset='400', data-y='center', data-voffset='90', data-speed='1500', data-start='1000', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.01', data-endelementdelay='0.3', data-endspeed='1200', data-endeasing='Power4.easeIn')
+                a.theme-btn.btn-style-two(href='#') Start Today
+                |  &ensp;&ensp; 
+                a.theme-btn.btn-style-three(href='#') Learn More
+            li(data-transition='fade', data-slotamount='1', data-masterspeed='1000', data-thumb='images/main-slider/image-2.jpg', data-saveperformance='off', data-title='Awesome Title Here')
+              img(src='images/main-slider/image-2.jpg', alt='', data-bgposition='center top', data-bgfit='cover', data-bgrepeat='no-repeat')
+              .tp-caption.sfl.sfb.tp-resizeme(data-x='center', data-hoffset='0', data-y='center', data-voffset='-80', data-speed='1500', data-start='500', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.01', data-endelementdelay='0.3', data-endspeed='1200', data-endeasing='Power4.easeIn')
+                h3 Save the environment
+              .tp-caption.sfl.sfb.tp-resizeme(data-x='center', data-hoffset='0', data-y='center', data-voffset='-10', data-speed='1500', data-start='500', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.01', data-endelementdelay='0.3', data-endspeed='1200', data-endeasing='Power4.easeIn')
+                h2.no-border
+                  | Grow 
+                  span.theme_color Trees
+                  |  For YOur 
+                  span.theme_color Future
+              .tp-caption.sfr.sfb.tp-resizeme(data-x='center', data-hoffset='0', data-y='center', data-voffset='80', data-speed='1500', data-start='1000', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.01', data-endelementdelay='0.3', data-endspeed='1200', data-endeasing='Power4.easeIn')
+                a.theme-btn.btn-style-two(href='#') Start Today
+                |  &ensp;&ensp; 
+                a.theme-btn.btn-style-three(href='#') Learn More
+            li(data-transition='fade', data-slotamount='1', data-masterspeed='1000', data-thumb='images/main-slider/image-3.jpg', data-saveperformance='off', data-title='Awesome Title Here')
+              img(src='images/main-slider/image-3.jpg', alt='', data-bgposition='center top', data-bgfit='cover', data-bgrepeat='no-repeat')
+              .tp-caption.sfl.sfb.tp-resizeme(data-x='center', data-hoffset='0', data-y='center', data-voffset='-60', data-speed='1500', data-start='500', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.01', data-endelementdelay='0.3', data-endspeed='1200', data-endeasing='Power4.easeIn')
+                h2.no-border
+                  span.theme_color Green
+                  |  Environment for Life
+              .tp-caption.sfr.sfb.tp-resizeme(data-x='center', data-hoffset='0', data-y='center', data-voffset='-10', data-speed='1500', data-start='500', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.01', data-endelementdelay='0.3', data-endspeed='1200', data-endeasing='Power4.easeIn')
+                .text.alternate.text-center Ensure Green and Healthy Environment for Better Living
+              .tp-caption.sfr.sfb.tp-resizeme(data-x='center', data-hoffset='0', data-y='center', data-voffset='55', data-speed='1500', data-start='1000', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.01', data-endelementdelay='0.3', data-endspeed='1200', data-endeasing='Power4.easeIn')
+                a.theme-btn.btn-style-two(href='#') Start Today
+                |  &ensp;&ensp; 
+                a.theme-btn.btn-style-three(href='#') Learn More
+          .tp-bannertimer
+    section.about-section
+      .auto-container
+        .row.clearfix
+          .content-column.col-md-6.col-sm-6.col-xs-12
+            .inner-box
+              .about-title
+                h3
+                  | About 
+                  span.theme_color Podgorica
+                h2 We Are The Saviours of Planet Earth
+              .text
+                | Fight against oppression amplify assistance; countries medicine new approaches The Elders Global South advocate organization equal opportunity of vaccine international vulnerable citizens. Lifting people social challenges democracy microloans fight against malnutrition, think tank social innovation global health truth dignity civic engagement. Design thinking diversification efficient recognize potential marginalized communities human potential governance change.
+              |  
+              a.theme-btn.btn-style-two(href='contact.html') CONTACT US
+          .image-column.col-md-6.col-sm-6.col-xs-12
+            .image.wow.fadeInRight(data-wow-delay='0ms', data-wow-duration='1500ms')
+              img(src='images/resource/about.png', alt='')
+    section.call-to-action(style='background-image:url(images/background/1.jpg)')
+      .auto-container
+        h2
+          | THE BEST TIME TO 
+          span.theme_color PLANT TREE
+          |  IS NOW
+        .text The only way to make this happened is to take action!
+        .buttons-box
+          a.theme-btn.btn-style-two(href='#') Start Today
+          |  
+          a.theme-btn.btn-style-three(href='#') Learn More
+    section.services-section
+      .auto-container
+        .sec-title
+          h3 Reasons to Choose Us
+          h2 What We Are Doing
+        .row.clearfix
+          .services-block.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .icon-box
+                .icon
+                  img(src='images/resource/services-icon-1.png', alt='')
+              h3
+                a(href='services.html') Recycling
+              .text
+                | Carbon emissions reductions truth, approaches enable medical supplies malnutrition achieving developing pathway to a better life.
+          .services-block.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .icon-box
+                .icon
+                  img(src='images/resource/services-icon-2.png', alt='')
+              h3
+                a(href='services.html') Eco System
+              .text
+                | Carbon emissions reductions truth, approaches enable medical supplies malnutrition achieving developing pathway to a better life.
+          .services-block.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .icon-box
+                .icon
+                  img(src='images/resource/services-icon-3.png', alt='')
+              h3
+                a(href='services.html') Saving Forests
+              .text
+                | Carbon emissions reductions truth, approaches enable medical supplies malnutrition achieving developing pathway to a better life.
+          .services-block.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .icon-box
+                .icon
+                  img(src='images/resource/services-icon-4.png', alt='')
+              h3
+                a(href='services.html') Water Refining
+              .text
+                | Carbon emissions reductions truth, approaches enable medical supplies malnutrition achieving developing pathway to a better life.
+          .services-block.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .icon-box
+                .icon
+                  img(src='images/resource/services-icon-5.png', alt='')
+              h3
+                a(href='services.html') Wind Energy
+              .text
+                | Carbon emissions reductions truth, approaches enable medical supplies malnutrition achieving developing pathway to a better life.
+          .services-block.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .icon-box
+                .icon
+                  img(src='images/resource/services-icon-6.png', alt='')
+              h3
+                a(href='services.html') Saving Animals
+              .text
+                | Carbon emissions reductions truth, approaches enable medical supplies malnutrition achieving developing pathway to a better life.
+    section#gallery-section.gallery-section
+      .auto-container.clearfix
+        .pull-left
+          h2 RECENT PROJECTS
+        .pull-right
+          .filters
+            ul.filter-tabs.clearfix
+              li.filter.active(data-role='button', data-filter='all') All
+              li.filter(data-role='button', data-filter='.engine-service') Environment
+              li.filter(data-role='button', data-filter='.car-service') Recycling
+              li.filter(data-role='button', data-filter='.brake-service') Ecology
+              li.filter(data-role='button', data-filter='.battery-service') Climate
+      .images-container
+        .filter-list.clearfix
+          .col-lg-6.col-md-6.col-sm-12.col-xs-12.gallery-item.mix.mix_all.all
+            .inner-box
+              .image
+                img(src='images/gallery/1.jpg', alt='')
+                .overlay-box
+                  .content
+                    h3
+                      a(href='project-single.html') Plant Seedling And Growth
+                    |  
+                    span.category Nature, Plant Seedling
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.engine-service.Ecology
+            .inner-box
+              .image
+                img(src='images/gallery/2.jpg', alt='')
+                .overlay-box
+                  .content
+                    h3
+                      a(href='project-single.html') Plant Seedling And Growth
+                    |  
+                    span.category Nature, Plant Seedling
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.car-service.engine-service
+            .inner-box
+              .image
+                img(src='images/gallery/3.jpg', alt='')
+                .overlay-box
+                  .content
+                    h3
+                      a(href='project-single.html') Plant Seedling And Growth
+                    |  
+                    span.category Nature, Plant Seedling
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.brake-service.car-service
+            .inner-box
+              .image
+                img(src='images/gallery/4.jpg', alt='')
+                .overlay-box
+                  .content
+                    h3
+                      a(href='project-single.html') Plant Seedling And Growth
+                    |  
+                    span.category Nature, Plant Seedling
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.battery-service.brake-service
+            .inner-box
+              .image
+                img(src='images/gallery/5.jpg', alt='')
+                .overlay-box
+                  .content
+                    h3
+                      a(href='project-single.html') Plant Seedling And Growth
+                    |  
+                    span.category Nature, Plant Seedling
+    section.team-section
+      .auto-container
+        .sec-title
+          h3 Reasons Join Us
+          h2 Our Volunteers
+        .row.clearfix
+          .team-member.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .image-box
+                img(src='images/resource/team-1.jpg', alt='')
+                .overlay-box
+                  .user-info
+                    .text Volunteer
+                    h4 Kane Willson
+                  ul.social-icon-two
+                    li
+                      a(href='#')
+                        span.fa.fa-facebook
+                    li
+                      a(href='#')
+                        span.fa.fa-twitter
+                    li
+                      a(href='#')
+                        span.fa.fa-google-plus
+          .team-member.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .image-box
+                img(src='images/resource/team-2.jpg', alt='')
+                .overlay-box
+                  .user-info
+                    .text Volunteer
+                    h4 Victoria Maxin
+                  ul.social-icon-two
+                    li
+                      a(href='#')
+                        span.fa.fa-facebook
+                    li
+                      a(href='#')
+                        span.fa.fa-twitter
+                    li
+                      a(href='#')
+                        span.fa.fa-google-plus
+          .team-member.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .image-box
+                img(src='images/resource/team-3.jpg', alt='')
+                .overlay-box
+                  .user-info
+                    .text Volunteer
+                    h4 Jenny Frankie
+                  ul.social-icon-two
+                    li
+                      a(href='#')
+                        span.fa.fa-facebook
+                    li
+                      a(href='#')
+                        span.fa.fa-twitter
+                    li
+                      a(href='#')
+                        span.fa.fa-google-plus
+    section.events-section(style='background-image:url(images/background/2.jpg)')
+      .auto-container
+        .sec-title-two
+          h3 Join Our Event
+          h2 UPCOMING EVENTS
+        .events-carousel.owl-carousel.owl-theme
+          .event-block
+            .inner-box.clearfix
+              .image-column.col-md-6.col-sm-12.col-xs-12
+                .image
+                  .featured Featured
+                  |  
+                  img(src='images/resource/slide-1.jpg', alt='')
+              .content-column.col-md-6.col-sm-12.col-xs-12
+                .inner
+                  h3
+                    a(href='event-single.html')
+                      | RECYCLING PLASTIC AND WASTE MANAGEMENT FOR
+                      br
+                      |  THE CLEAN ENVIRONMENT
+                  ul.post-meta
+                    li
+                      span.icon.flaticon-clock-1
+                      | 10.00am - 4.00pm
+                    li
+                      span.icon.flaticon-pin
+                      | 24, Western Street, Sanford, Florida
+                  .text
+                    | Contribution globalization cross-agency coordination conflict resolution rural honor. Country criteria diversity sustainable donors; empowerment complexity, climate change global leaders Bono pursue these aspirations deep engagement equity human being.
+                  |  
+                  a.view-event(href='event-single.html') Continue Reading . . .
+                .time-box
+                  strong 01
+                  br
+                  | Dec
+          .event-block
+            .inner-box.clearfix
+              .image-column.col-md-6.col-sm-12.col-xs-12
+                .image
+                  .featured Featured
+                  |  
+                  img(src='images/resource/slide-1.jpg', alt='')
+              .content-column.col-md-6.col-sm-12.col-xs-12
+                .inner
+                  h3
+                    a(href='event-single.html')
+                      | RECYCLING PLASTIC AND WASTE MANAGEMENT FOR
+                      br
+                      |  THE CLEAN ENVIRONMENT
+                  ul.post-meta
+                    li
+                      span.icon.flaticon-clock-1
+                      | 10.00am - 4.00pm
+                    li
+                      span.icon.flaticon-pin
+                      | 24, Western Street, Sanford, Florida
+                  .text
+                    | Contribution globalization cross-agency coordination conflict resolution rural honor. Country criteria diversity sustainable donors; empowerment complexity, climate change global leaders Bono pursue these aspirations deep engagement equity human being.
+                  |  
+                  a.view-event(href='event-single.html') Continue Reading . . .
+                .time-box
+                  strong 01
+                  br
+                  | Dec
+          .event-block
+            .inner-box.clearfix
+              .image-column.col-md-6.col-sm-12.col-xs-12
+                .image
+                  .featured Featured
+                  |  
+                  img(src='images/resource/slide-1.jpg', alt='')
+              .content-column.col-md-6.col-sm-12.col-xs-12
+                .inner
+                  h3
+                    a(href='event-single.html')
+                      | RECYCLING PLASTIC AND WASTE MANAGEMENT FOR
+                      br
+                      |  THE CLEAN ENVIRONMENT
+                  ul.post-meta
+                    li
+                      span.icon.flaticon-clock-1
+                      | 10.00am - 4.00pm
+                    li
+                      span.icon.flaticon-pin
+                      | 24, Western Street, Sanford, Florida
+                  .text
+                    | Contribution globalization cross-agency coordination conflict resolution rural honor. Country criteria diversity sustainable donors; empowerment complexity, climate change global leaders Bono pursue these aspirations deep engagement equity human being.
+                  |  
+                  a.view-event(href='event-single.html') Continue Reading . . .
+                .time-box
+                  strong 01
+                  br
+                  | Dec
+    section.news-section
+      .auto-container
+        .sec-title
+          h3 Our News
+          h2 Recent Posts
+        .row.clearfix
+          .news-style-one.col-md-4.col-sm-6.col-xs-12
+            .inner-box.wow.fadeIn(data-wow-delay='0ms', data-wow-duration='1500ms')
+              .image-box
+                a(href='blog-detail.html')
+                  img(src='images/resource/news-1.jpg', alt='')
+              .lower-content
+                .upper-box
+                  .title Protect Nature
+                  h3
+                    a(href='blog-detail.html') How to Recycle things
+                  .text
+                    | Lifting people socialaize challenges democracy microloans fight against the malnutrition, think tank social truth dignity civic engagement.
+                .lower-box.clearfix
+                  .pull-left
+                    .date
+                      span.icon.flaticon-business
+                      |  26.11.2016
+                  .pull-right
+                    ul.news-info
+                      li
+                        a(href='#')
+                          span.icon.flaticon-communication
+                          | 6
+                      li
+                        a(href='#')
+                          span.icon.flaticon-heart-1
+                          | 10
+          .news-style-one.col-md-4.col-sm-6.col-xs-12
+            .inner-box.wow.fadeIn(data-wow-delay='300ms', data-wow-duration='1500ms')
+              .image-box
+                a(href='blog-detail.html')
+                  img(src='images/resource/news-2.jpg', alt='')
+              .lower-content
+                .upper-box
+                  .title Protect Nature
+                  h3
+                    a(href='blog-detail.html') Controlling Water Pollution
+                  .text
+                    | Lifting people socialaize challenges democracy microloans fight against the malnutrition, think tank social truth dignity civic engagement.
+                .lower-box.clearfix
+                  .pull-left
+                    .date
+                      span.icon.flaticon-business
+                      |  26.11.2016
+                  .pull-right
+                    ul.news-info
+                      li
+                        a(href='#')
+                          span.icon.flaticon-communication
+                          | 6
+                      li
+                        a(href='#')
+                          span.icon.flaticon-heart-1
+                          | 10
+          .news-style-one.col-md-4.col-sm-6.col-xs-12
+            .inner-box.wow.fadeIn(data-wow-delay='600ms', data-wow-duration='1500ms')
+              .image-box
+                a(href='blog-detail.html')
+                  img(src='images/resource/news-3.jpg', alt='')
+              .lower-content
+                .upper-box
+                  .title Planting Trees
+                  h3
+                    a(href='blog-detail.html') How to Recycle things
+                  .text
+                    | Lifting people socialaize challenges democracy microloans fight against the malnutrition, think tank social truth dignity civic engagement.
+                .lower-box.clearfix
+                  .pull-left
+                    .date
+                      span.icon.flaticon-business
+                      |  26.11.2016
+                  .pull-right
+                    ul.news-info
+                      li
+                        a(href='#')
+                          span.icon.flaticon-communication
+                          | 6
+                      li
+                        a(href='#')
+                          span.icon.flaticon-heart-1
+                          | 10
+    footer.main-footer
+      .auto-container
+        .widgets-section
+          .row.clearfix
+            .big-column.col-md-6.col-sm-12.col-xs-12
+              .row.clearfix
+                .footer-column.col-md-6.col-sm-6.col-xs-12
+                  .footer-widget.about-widget
+                    .footer-logo
+                      figure
+                        a(href='index.html')
+                          img(src='images/logo-2.png', alt='')
+                    .widget-content
+                      .text
+                        p
+                          | Lifting people social challenge democracy micro fight against malnutrition, think tank social innovation global health truth dignity civic engagement.
+                        .call-number
+                          | Call us 
+                          span +04 2345 6789
+                .footer-column.col-md-6.col-sm-6.col-xs-12
+                  .footer-widget.posts-widget
+                    h2 LATEST POSTS
+                    .widget-content
+                      .posts
+                        .post
+                          figure.post-thumb
+                            img(src='images/resource/post-thumb-1.jpg', alt='')
+                          .desc-text
+                            a(href='#') Recycling Plastic Bottles
+                          .time 26.11.2016
+                        .post
+                          figure.post-thumb
+                            img(src='images/resource/post-thumb-2.jpg', alt='')
+                          .desc-text
+                            a(href='#') Recycling Plastic Bottles
+                          .time 26.11.2016
+                        .post
+                          figure.post-thumb
+                            img(src='images/resource/post-thumb-3.jpg', alt='')
+                          .desc-text
+                            a(href='#') Recycling Plastic Bottles
+                          .time 26.11.2016
+            .big-column.col-md-6.col-sm-12.col-xs-12
+              .row.clearfix
+                .footer-column.col-md-6.col-sm-6.col-xs-12
+                  .footer-widget.gallery-widget
+                    h2 Instagram
+                    .widget-content
+                      .widget-content
+                        .images-outer.clearfix
+                          figure.image-box
+                            a.lightbox-image(href='images/resource/event-4.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
+                              img(src='images/gallery/instagram-1.jpg', alt='')
+                          figure.image-box
+                            a.lightbox-image(href='images/resource/project.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
+                              img(src='images/gallery/instagram-2.jpg', alt='')
+                          figure.image-box
+                            a.lightbox-image(href='images/resource/news-6.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
+                              img(src='images/gallery/instagram-3.jpg', alt='')
+                          figure.image-box
+                            a.lightbox-image(href='images/resource/event-6.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
+                              img(src='images/gallery/instagram-4.jpg', alt='')
+                          figure.image-box
+                            a.lightbox-image(href='images/resource/event-5.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
+                              img(src='images/gallery/instagram-5.jpg', alt='')
+                          figure.image-box
+                            a.lightbox-image(href='images/resource/news-7.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
+                              img(src='images/gallery/instagram-6.jpg', alt='')
+                .footer-column.col-md-6.col-sm-6.col-xs-12
+                  .footer-widget.contact-widget
+                    h2 SUBSCRIBE
+                    .widget-content
+                      .text
+                        | Design thinking diversification efficient recognize potential communities human potential governance change.
+                      .newsletter-one
+                        form(method='post', action='contact.html')
+                          .form-group
+                            input(type='email', name='email', value='', placeholder='Enter your Email', required='')
+                            |  
+                            button.theme-btn(type='submit')
+                              span.fa.fa-paper-plane-o
+      .footer-bottom
+        .auto-container
+          .copyright-text &copy; 2017 Podgorica. All Rights Reserved.
+  .scroll-to-top.scroll-to-target(data-target='html')
+    span.fa.fa-long-arrow-up
+  script(src='js/jquery.js')
+  script(src='js/bootstrap.min.js')
+  script(src='js/jquery.mCustomScrollbar.concat.min.js')
+  script(src='js/revolution.min.js')
+  script(src='js/jquery.fancybox.pack.js')
+  script(src='js/jquery.fancybox-media.js')
+  script(src='js/owl.js')
+  script(src='js/wow.js')
+  script(src='js/appear.js')
+  script(src='js/jquery.mixitup.js')
+  script(src='js/script.js')
+  script(src='js/app.js' type='text/js')
