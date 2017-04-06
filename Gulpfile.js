@@ -17,7 +17,7 @@ gulp.task('js', function(){
 })
 
 gulp.task('css', function(){
-  return gulp.src('src/css/*.styl')
+  return gulp.src('src/stylus/*.styl')
     .pipe(plumber())
     .pipe(stylus({errors: true, 'include css': true}))
     .pipe(autoprefixer())
@@ -35,7 +35,7 @@ gulp.task('watch', function(){
   gulp.watch('src/js/*.js', ['js'])
   gulp.watch('src/js/*/*.js', ['js'])
   gulp.watch('src/pug/*.pug', ['html'])
-  gulp.watch('src/css/*.styl', ['css'])
+  gulp.watch('src/stylus/*.styl', ['css'])
 })
 
 gulp.task('default', ['js', 'watch', 'css', 'html'])
