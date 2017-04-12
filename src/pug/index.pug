@@ -103,16 +103,19 @@ block content
             .inner-box
               .about-title
                 h3
-                  | About 
-                  span.theme_color Fred Meijer River Valley Trails
-                h2 Western Michigan's Finest Outdoors
+                  span
+                    simpla-text(sid='about-section-subheading-1') 
+                  span.theme_color
+                    simpla-text(sid='about-section-subheading-2')
+                h2
+                  simpla-text(sid='about-section-heading')
               .text
-                | The Friends of the Fred Meijer River Valley Rail Trails is a non-profit 501(C)3 organization. We are entrusted to maintain and enhance over 40 miles of trails stretching from Greenville to Belding, Belding to Lowell, Lowell to Saranac, and Saranac to Ionia. Fred Meijer River Valley Rail Trails are part of the 125 mile Fred Meijer Mid-Michigan Trail Network, 100% maintained and funded through private donation. We receive no tax dollars.
-              |  
+                simpla-text(sid='about-section-text')
               a.theme-btn.btn-style-two(href='mailto:fmrvrt@gmail.com') CONTACT US
           .image-column.col-md-6.col-sm-6.col-xs-12
             .image.wow.fadeInRight(data-wow-delay='0ms', data-wow-duration='1500ms')
               img(src='http://res.cloudinary.com/due1qfixq/image/upload/c_scale,w_570/v1491460006/chad-madden-170954_1_tfbc2c.jpg', alt='')
+
     section.call-to-action(style='background-image:url(http://res.cloudinary.com/due1qfixq/image/upload/c_scale,w_1500/v1490759094/nathan-anderson-143699_1_m3qvdd.jpg)')
       .auto-container
         h2
@@ -130,8 +133,11 @@ block content
         .sec-title-two
           h3 Follow us on Instagram
           h2 PHOTOS FROM THE TRAIL
-        script(src='//lightwidget.com/widgets/lightwidget.js')
-        iframe.lightwidget-widget(src='//lightwidget.com/widgets/026e977d32b4593c928356a384af77c7.html', scrolling='no', allowtransparency='true', style='width: 100%; border: 0; overflow: hidden;')
+        //- script(src='//lightwidget.com/widgets/lightwidget.js')
+        //- iframe.lightwidget-widget(src='//lightwidget.com/widgets/026e977d32b4593c928356a384af77c7.html', scrolling='no', allowtransparency='true', style='width: 100%; border: 0; overflow: hidden;')
+        script(src='https://snapwidget.com/js/snapwidget.js')
+        iframe.snapwidget-widget(src='https://snapwidget.com/embed/366557', allowtransparency='true', frameborder='0', scrolling='no', style='border:none; overflow:hidden; width:100%; ')
+
 
     section#gallery-section.gallery-section
       .auto-container.clearfix
@@ -259,7 +265,8 @@ block content
       .auto-container
         .sec-title-two
           h3 Join Our Event
-          h2 UPCOMING EVENTS
+          h2 
+            simpla-text(sid='upcoming-events') UPCOMING EVENTS
         .events-carousel.owl-carousel.owl-theme
           .event-block
             .inner-box.clearfix
@@ -283,8 +290,7 @@ block content
                       span.icon.flaticon-pin
                       | 24, Western Street, Sanford, Florida
                   .text
-                    | Contribution globalization cross-agency coordination conflict resolution rural honor. Country criteria diversity sustainable donors; empowerment complexity, climate change global leaders Bono pursue these aspirations deep engagement equity human being.
-                  |  
+                    simpla-text(sid='slide-1-text') 
                   a.view-event(href='event-single.html') Continue Reading . . .
                 .time-box
                   strong 01
@@ -485,24 +491,8 @@ block content
                     .widget-content
                       .widget-content
                         .images-outer.clearfix
-                          figure.image-box
-                            a.lightbox-image(href='images/resource/event-4.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
-                              img(src='images/gallery/instagram-1.jpg', alt='')
-                          figure.image-box
-                            a.lightbox-image(href='images/resource/project.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
-                              img(src='images/gallery/instagram-2.jpg', alt='')
-                          figure.image-box
-                            a.lightbox-image(href='images/resource/news-6.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
-                              img(src='images/gallery/instagram-3.jpg', alt='')
-                          figure.image-box
-                            a.lightbox-image(href='images/resource/event-6.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
-                              img(src='images/gallery/instagram-4.jpg', alt='')
-                          figure.image-box
-                            a.lightbox-image(href='images/resource/event-5.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
-                              img(src='images/gallery/instagram-5.jpg', alt='')
-                          figure.image-box
-                            a.lightbox-image(href='images/resource/news-7.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
-                              img(src='images/gallery/instagram-6.jpg', alt='')
+                          script(src='//lightwidget.com/widgets/lightwidget.js')
+                          iframe.lightwidget-widget(src='//lightwidget.com/widgets/026e977d32b4593c928356a384af77c7.html', scrolling='no', allowtransparency='true', style='width: 100%; border: 0; overflow: hidden;')
                 .footer-column.col-md-6.col-sm-6.col-xs-12
                   .footer-widget.contact-widget
                     h2 SUBSCRIBE
