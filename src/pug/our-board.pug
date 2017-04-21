@@ -1,0 +1,309 @@
+extends layout.pug
+
+block content
+  .page-wrapper
+    .preloader
+    header.main-header
+      .header-top
+        .auto-container
+          .clearfix
+            .top-left
+              ul.clearfix
+                li
+                  span.icon.flaticon-technology-1
+                  | +04 2345 6789
+                li
+                  span.icon.flaticon-interface
+                  | info@podgorica.com
+            .top-right
+              .social-icon
+                a(href='#')
+                  span.fa.fa-facebook
+                a(href='#')
+                  span.fa.fa-twitter
+                a(href='#')
+                  span.fa.fa-google-plus
+                a(href='#')
+                  span.fa.fa-pinterest-p
+                a(href='#')
+                  span.fa.fa-youtube-play
+      .main-box
+        .auto-container
+          .outer-container.clearfix
+            .logo-box
+              .logo
+                a(href='index.html')
+                  img(src='images/logo.png', alt='')
+            .nav-outer.clearfix
+              nav.main-menu
+                .navbar-header
+                  button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                .navbar-collapse.collapse.clearfix
+                  ul.navigation.clearfix
+                    li
+                      a(href='/') Home
+                    li
+                      a(href='/events.html') Events
+                    li
+                      a(href='/trail-map.html') Trail Map
+                    li.current
+                      a(href='/our-board.html') Our Board
+                    li
+                      a(href='mailto:fmrvrtfriends@gmail.com') Contact Us
+                    li
+                      a(href='www.lowellareatrailway.org') Lowell Area Recreation
+              .btn-outer
+                a.theme-btn.quote-btn.btn-style-one(href='donate.html') DONATE
+    section.page-title(style='background-image:url(images/background/7.jpg);')
+      .auto-container
+        .content-box
+          h1 Team
+          ul.bread-crumb
+            li
+              a(href='index.html') Home
+            li Team
+    section.team-section
+      .auto-container
+        .row.clearfix
+          - 
+            var volunteers = [
+              {title: 'Chairperson', name: 'Robert Brown - Ionia'},
+              {title: 'Vice Chairperson', name: 'Mark Fristma - Ionia'},
+              {title: 'Secretary', name: 'Mark Grieves - Ionia'},
+              {title: 'Treasurer', name: 'Tina Dickerson - Kent'},
+              {title: 'Director', name: 'Goerge Raimer - Ionia'},
+              {title: 'Director', name: 'Wayne Addis - Montcalm'},
+              {title: 'Director', name: 'Ron Gunderson - Ionia'},
+              {title: 'Director', name: 'Alan Rumbaugh - Kent'},
+              {title: 'Director', name: 'Jon Ploeg - Kent'},
+              {title: 'Director', name: 'Rob Florian - Ionia'}
+            ]
+
+          each person in volunteers
+            .team-member.col-md-4.col-sm-6.col-xs-12.volunteer
+              .inner-box
+                .image-box
+                  img(src='http://hookslab.neurobio.pitt.edu/images/Placeholder_Photo.png', alt='')
+                  .overlay-box
+                    .user-info
+                      .text= person.title
+                      h4=person.name
+                    //- ul.social-icon-two
+                    //-   li
+                    //-     a(href='#')
+                    //-       span.fa.fa-facebook
+                    //-   li
+                    //-     a(href='#')
+                    //-       span.fa.fa-twitter
+                    //-   li
+                    //-     a(href='#')
+                    //-       span.fa.fa-google-plus
+
+          //- .team-member.col-md-4.col-sm-6.col-xs-12
+          //-   .inner-box
+          //-     .image-box
+          //-       img(src='images/resource/team-1.jpg', alt='')
+          //-       .overlay-box
+          //-         .user-info
+          //-           .text Volunteer
+          //-           h4 Kane Willson
+          //-         ul.social-icon-two
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-facebook
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-twitter
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-google-plus
+          //- .team-member.col-md-4.col-sm-6.col-xs-12
+          //-   .inner-box
+          //-     .image-box
+          //-       img(src='images/resource/team-2.jpg', alt='')
+          //-       .overlay-box
+          //-         .user-info
+          //-           .text Volunteer
+          //-           h4 Victoria Maxin
+          //-         ul.social-icon-two
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-facebook
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-twitter
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-google-plus
+          //- .team-member.col-md-4.col-sm-6.col-xs-12
+          //-   .inner-box
+          //-     .image-box
+          //-       img(src='images/resource/team-3.jpg', alt='')
+          //-       .overlay-box
+          //-         .user-info
+          //-           .text Volunteer
+          //-           h4 Jenny Frankie
+          //-         ul.social-icon-two
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-facebook
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-twitter
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-google-plus
+          //- .team-member.col-md-4.col-sm-6.col-xs-12
+          //-   .inner-box
+          //-     .image-box
+          //-       img(src='images/resource/team-4.jpg', alt='')
+          //-       .overlay-box
+          //-         .user-info
+          //-           .text Volunteer
+          //-           h4 Lita William
+          //-         ul.social-icon-two
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-facebook
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-twitter
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-google-plus
+          //- .team-member.col-md-4.col-sm-6.col-xs-12
+          //-   .inner-box
+          //-     .image-box
+          //-       img(src='images/resource/team-5.jpg', alt='')
+          //-       .overlay-box
+          //-         .user-info
+          //-           .text Volunteer
+          //-           h4 Ben Stroke
+          //-         ul.social-icon-two
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-facebook
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-twitter
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-google-plus
+          //- .team-member.col-md-4.col-sm-6.col-xs-12
+          //-   .inner-box
+          //-     .image-box
+          //-       img(src='images/resource/team-6.jpg', alt='')
+          //-       .overlay-box
+          //-         .user-info
+          //-           .text Volunteer
+          //-           h4 Selena Gomez
+          //-         ul.social-icon-two
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-facebook
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-twitter
+          //-           li
+          //-             a(href='#')
+          //-               span.fa.fa-google-plus
+    footer.main-footer
+      .auto-container
+        .widgets-section
+          .row.clearfix
+            .big-column.col-md-6.col-sm-12.col-xs-12
+              .row.clearfix
+                .footer-column.col-md-6.col-sm-6.col-xs-12
+                  .footer-widget.about-widget
+                    .footer-logo
+                      figure
+                        a(href='index.html')
+                          img(src='images/logo-2.png', alt='')
+                    .widget-content
+                      .text
+                        p
+                          | Lifting people social challenge democracy micro fight against malnutrition, think tank social innovation global health truth dignity civic engagement.
+                        .call-number
+                          | Call us 
+                          span +04 2345 6789
+                .footer-column.col-md-6.col-sm-6.col-xs-12
+                  .footer-widget.posts-widget
+                    h2 LATEST POSTS
+                    .widget-content
+                      .posts
+                        .post
+                          figure.post-thumb
+                            img(src='images/resource/post-thumb-1.jpg', alt='')
+                          .desc-text
+                            a(href='#') Recycling Plastic Bottles
+                          .time 26.11.2016
+                        .post
+                          figure.post-thumb
+                            img(src='images/resource/post-thumb-2.jpg', alt='')
+                          .desc-text
+                            a(href='#') Recycling Plastic Bottles
+                          .time 26.11.2016
+                        .post
+                          figure.post-thumb
+                            img(src='images/resource/post-thumb-3.jpg', alt='')
+                          .desc-text
+                            a(href='#') Recycling Plastic Bottles
+                          .time 26.11.2016
+            .big-column.col-md-6.col-sm-12.col-xs-12
+              .row.clearfix
+                .footer-column.col-md-6.col-sm-6.col-xs-12
+                  .footer-widget.gallery-widget
+                    h2 Instagram
+                    .widget-content
+                      .widget-content
+                        .images-outer.clearfix
+                          figure.image-box
+                            a.lightbox-image(href='images/resource/event-4.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
+                              img(src='images/gallery/instagram-1.jpg', alt='')
+                          figure.image-box
+                            a.lightbox-image(href='images/resource/project.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
+                              img(src='images/gallery/instagram-2.jpg', alt='')
+                          figure.image-box
+                            a.lightbox-image(href='images/resource/news-6.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
+                              img(src='images/gallery/instagram-3.jpg', alt='')
+                          figure.image-box
+                            a.lightbox-image(href='images/resource/event-6.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
+                              img(src='images/gallery/instagram-4.jpg', alt='')
+                          figure.image-box
+                            a.lightbox-image(href='images/resource/event-5.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
+                              img(src='images/gallery/instagram-5.jpg', alt='')
+                          figure.image-box
+                            a.lightbox-image(href='images/resource/news-7.jpg', title='Image Title Here', data-fancybox-group='footer-gallery')
+                              img(src='images/gallery/instagram-6.jpg', alt='')
+                .footer-column.col-md-6.col-sm-6.col-xs-12
+                  .footer-widget.contact-widget
+                    h2 SUBSCRIBE
+                    .widget-content
+                      .text
+                        | Design thinking diversification efficient recognize potential communities human potential governance change.
+                      .newsletter-one
+                        form(method='post', action='contact.html')
+                          .form-group
+                            input(type='email', name='email', value='', placeholder='Enter your Email', required='')
+                            |  
+                            button.theme-btn(type='submit')
+                              span.fa.fa-paper-plane-o
+      .footer-bottom
+        .auto-container
+          .copyright-text &copy; 2017 Podgorica. All Rights Reserved.
+  .scroll-to-top.scroll-to-target(data-target='html')
+    span.fa.fa-long-arrow-up
+  script(src='js/jquery.js')
+  script(src='js/bootstrap.min.js')
+  script(src='js/jquery.mCustomScrollbar.concat.min.js')
+  script(src='js/revolution.min.js')
+  script(src='js/jquery.fancybox.pack.js')
+  script(src='js/jquery.fancybox-media.js')
+  script(src='js/owl.js')
+  script(src='js/wow.js')
+  script(src='js/appear.js')
+  script(src='js/jquery.mixitup.js')
+  script(src='js/script.js')
