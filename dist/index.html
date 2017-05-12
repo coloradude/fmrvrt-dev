@@ -18,37 +18,55 @@
     <title>Fred Meijer River Valley Trails</title>
   </head>
   <body>
-    <div class="page-wrapper">
-      <div class="preloader"></div>
-      <header class="main-header">
-        <div class="main-box">
-          <div class="auto-container">
-            <div class="outer-container clearfix">
-              <div class="logo-box">
-                <div class="logo"><a href="index.html"><img src="images/placeholder_logo.jpg" alt="River Valley Trails Logo"></a></div>
-              </div>
-              <div class="nav-outer clearfix">
-                <nav class="main-menu">
-                  <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                  </div>
-                  <div class="navbar-collapse collapse clearfix">
-                    <ul class="navigation clearfix">
-                      <li class="current"><a href="/">Home</a></li>
-                      <li><a href="/events.html">Events</a></li>
-                      <li><a href="/trail-map.html">Trail Map</a></li>
-                      <li><a href="/our-board.html">Our Board</a></li>
-                      <li><a href="mailto:fmrvrtfriends@gmail.com">Contact Us</a></li>
-                      <li><a href="www.lowellareatrailway.org">Lowell Area Recreation</a></li>
-                    </ul>
-                  </div>
-                </nav>
-                <div class="btn-outer"><a class="theme-btn quote-btn btn-style-one" href="donate.html">DONATE</a></div>
-              </div>
+    <header class="main-header">
+      <div class="main-box">
+        <div class="auto-container">
+          <div class="outer-container clearfix">
+            <div class="logo-box">
+              <div class="logo"><a href="index.html"><img src="images/placeholder_logo.jpg" alt="River Valley Trails Logo"></a></div>
+            </div>
+            <div class="nav-outer clearfix">
+              <nav class="main-menu">
+                <div class="navbar-header">
+                  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="navbar-collapse collapse clearfix">
+                  <ul class="navigation clearfix">
+                    <li id="nav-home"><a href="/">Home</a></li>
+                    <li id="nav-about"><a href="https://drive.google.com/file/d/0B03-djLC8T3XcFBnUVRFck91X3M/view?usp=sharing" target="_blank">About</a></li>
+                    <li id="nav-events"><a href="/events.html">Events</a></li>
+                    <li id="nav-trail-map"><a href="/trail-map.html">Trail Map</a></li>
+                    <li id="nav-our-board"><a href="/our-board.html">Our Board</a></li>
+                    <li><a href="/contact-us.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="btn-outer"><a class="theme-btn quote-btn btn-style-one" href="https://paypal.me/fmrvrt">DONATE</a></div>
             </div>
           </div>
         </div>
-      </header>
+        <script>
+          var path = window.location.pathname
+          switch(path) {
+            case '/':
+              document.querySelector('#nav-home').classList.add('current')
+              break
+            case '/events.html':
+              document.querySelector('#nav-events').classList.add('current')
+              break
+            case '/trail-map.html':
+              document.querySelector('#nav-trail-map').classList.add('current')
+              break
+            case '/our-board.html':
+              document.querySelector('#nav-our-board').classList.add('current')
+              break
+            }
+          
+        </script>
+      </div>
+    </header>
+    <div class="page-wrapper">
+      <div class="preloader"></div>
       <section class="main-slider" data-start-height="850" data-slide-overlay="yes">
         <div class="tp-banner-container">
           <div class="tp-banner">
@@ -61,7 +79,7 @@
                   <h2>River Valley Rail Trails</h2>
                 </div>
                 <div class="tp-caption sfr sfb tp-resizeme" data-x="left" data-hoffset="400" data-y="center" data-voffset="20" data-speed="1500" data-start="500" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn"></div>
-                <div class="tp-caption sfr sfb tp-resizeme" data-x="left" data-hoffset="400" data-y="center" data-voffset="90" data-speed="1500" data-start="1000" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn"><a class="theme-btn btn-style-two" href="#">Donate Today</a> &ensp;&ensp; <a class="theme-btn btn-style-three" href="#">Learn More</a></div>
+                <div class="tp-caption sfr sfb tp-resizeme" data-x="left" data-hoffset="400" data-y="center" data-voffset="90" data-speed="1500" data-start="1000" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn"><a class="theme-btn btn-style-two" href="https://paypal.me/fmrvrt">Donate Today</a> &ensp;&ensp; <a class="theme-btn btn-style-three" href="https://drive.google.com/file/d/0B03-djLC8T3XcFBnUVRFck91X3M/view?usp=sharing" target="_blank">Learn More</a></div>
               </li>
             </ul>
             <div class="tp-bannertimer"></div>
@@ -96,17 +114,7 @@
         <div class="auto-container">
           <h2>THE BEST TIME TO <span class="theme_color">HELP US</span> IS NOW</h2>
           <div class="text">The only way to finish this trail is to take action!</div>
-          <div class="buttons-box"><a class="theme-btn btn-style-two" href="#">Donate Today</a> <a class="theme-btn btn-style-three" href="#">Learn More</a></div>
-        </div>
-      </section>
-      <section class="instagram-feed">
-        <div class="auto-container">
-          <div class="sec-title-two">
-            <h3>Follow us on Instagram</h3>
-            <h2>PHOTOS FROM THE TRAIL</h2>
-          </div>
-          <script src="https://snapwidget.com/js/snapwidget.js"></script>
-          <iframe class="snapwidget-widget" src="https://snapwidget.com/embed/366557" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; ;"></iframe>
+          <div class="buttons-box"><a class="theme-btn btn-style-two" href="https://paypal.me/fmrvrt">Donate Today</a> <a class="theme-btn btn-style-three" href="https://drive.google.com/file/d/0B03-djLC8T3XcFBnUVRFck91X3M/view?usp=sharing" target="_blank">Learn More</a></div>
         </div>
       </section>
       <section class="gallery-section" id="gallery-section">
@@ -118,65 +126,66 @@
             <div class="filters">
               <ul class="filter-tabs clearfix">
                 <li class="filter active" data-role="button" data-filter="all">All</li>
-                <li class="filter" data-role="button" data-filter=".engine-service">Grand River Valley Rail Trail</li>
-                <li class="filter" data-role="button" data-filter=".car-service">Flat River Valley Rail Trail</li>
-                <li class="filter" data-role="button" data-filter=".brake-service">Lowell Area Recreation Authority</li>
+                <li class="filter" data-role="button" data-filter=".rvtb">River Valley Trail Boss</li>
+                <li class="filter" data-role="button" data-filter=".grvrt">Grand River Valley Rail Trail</li>
+                <li class="filter" data-role="button" data-filter=".frvrt">Flat River Valley Rail Trail</li>
+                <li class="filter" data-role="button" data-filter=".lara">Lowell Area Recreation Authority</li>
               </ul>
             </div>
           </div>
         </div>
         <div class="images-container">
           <div class="filter-list clearfix">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 gallery-item mix mix_all all">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 gallery-item mix mix_all all rvtb">
               <div class="inner-box">
-                <div class="image"><img src="images/gallery/1.jpg" alt="">
+                <div class="image" style="background-image: url(https://68.media.tumblr.com/c6254d9ab49fae7e9fe1dc0e8a11c4d0/tumblr_opm4acXDi11woz4ijo1_1280.jpg;"><img src="images/gallery/2.jpg" alt="">
                   <div class="overlay-box">
                     <div class="content">
-                      <h3><a href="project-single.html">Plant Seedling And Growth</a></h3> <span class="category">Nature, Plant Seedling</span>
+                      <h3><a href="https://rivervalleytrailboss.tumblr.com/post/160427716477/motation" target="_blank">Motation</a></h3> <span class="category">River Valley Trail Boss</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 gallery-item mix mix_all engine-service Ecology">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 gallery-item mix mix_all grvrt">
               <div class="inner-box">
-                <div class="image"><img src="images/gallery/2.jpg" alt="">
+                <div class="image" style="background-image: url(http://res.cloudinary.com/due1qfixq/image/upload/v1493160359/8d3ba2d82ea92e1caed670da96e670f9_dhyvuy.jpg);"><img src="images/gallery/2.jpg" alt="">
                   <div class="overlay-box">
                     <div class="content">
-                      <h3><a href="project-single.html">Plant Seedling And Growth</a></h3> <span class="category">Nature, Plant Seedling</span>
+                      <h3><a href="https://flatriverrailtrail.tumblr.com/post/160228124660/our-trail-network" target="_blank">fred meijer grand river valley rail trail__https</a></h3> <span class="category">Flat River Valley Rail Trail News</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 gallery-item mix mix_all car-service engine-service">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 gallery-item mix mix_all frvrt">
               <div class="inner-box">
-                <div class="image"><img src="images/gallery/3.jpg" alt="">
+                <div class="image" style="background-image: url(https://68.media.tumblr.com/5b6753ed4fb42445fcb6db2e908f98da/tumblr_opbrrnyCQw1wozz9so1_400.jpg);"><img src="images/gallery/3.jpg" alt="">
                   <div class="overlay-box">
                     <div class="content">
-                      <h3><a href="project-single.html">Plant Seedling And Growth</a></h3> <span class="category">Nature, Plant Seedling</span>
+                      <h3><a href="https://grandrivertrail.tumblr.com/post/160226466688/one-of-our-members-got-some-nice-photos-last-week" target="_blank">One of our members got some nice photos last week riding from Saranac to Pewamo. Thanks for the contribution, Gail!</a></h3> <span class="category">Grand River Valley Rail Trail News</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 gallery-item mix mix_all brake-service car-service">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 gallery-item mix mix_all lara">
               <div class="inner-box">
-                <div class="image"><img src="images/gallery/4.jpg" alt="">
+                <div class="image" style="background-image: url(https://68.media.tumblr.com/74b43540c9cb295e4ae5d0f910e62c32/tumblr_opm4knlhu71wozyrqo1_1280.jpg);"><img src="images/gallery/2.jpg" alt="">
                   <div class="overlay-box">
                     <div class="content">
-                      <h3><a href="project-single.html">Plant Seedling And Growth</a></h3> <span class="category">Nature, Plant Seedling</span>
+                      <h3><a href="https://lowelllara.tumblr.com/post/160427912227/meet-me-at-spaghetti-junction-just-follow-the" target="_blank">Meet me at spaghetti junction. Just follow the map.</a></h3> <span class="category">Lowell Area Recreation Authority News</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 gallery-item mix mix_all battery-service brake-service">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 gallery-item mix mix_all rvtb">
               <div class="inner-box">
-                <div class="image"><img src="images/gallery/5.jpg" alt="">
+                <div class="image" style="background-image: url(https://68.media.tumblr.com/fee9bc8156b56824603f9349bf624a47/tumblr_opm40nLHkF1woz4ijo1_1280.jpg);"><img src="images/gallery/5.jpg" alt="">
                   <div class="overlay-box">
                     <div class="content">
-                      <h3><a href="project-single.html">Plant Seedling And Growth</a></h3> <span class="category">Nature, Plant Seedling</span>
+                      <h3><a href="https://rivervalleytrailboss.tumblr.com/post/160427538447/my-name-is-robert-and-i-want-a-chipper-just-like">My name is Robert, and I want a chipper. Just like this one</a></h3> <span class="category">The Director's Chair</span>
                     </div>
                   </div>
                 </div>
@@ -189,20 +198,20 @@
         <div class="auto-container">
           <div class="sec-title">
             <h3>The Michigan Trail Family</h3>
-            <h2>All Our Network</h2>
+            <h2>Our Regional Network</h2>
           </div>
           <div class="row clearfix">
             <div class="team-member col-md-4 col-sm-6 col-xs-12">
               <div class="inner-box">
-                <div class="image-box"><img src="https://res.cloudinary.com/due1qfixq/image/upload/v1491534953/IMG_2763_xez0vb.jpg" alt="">
+                <div class="image-box"><a href="http://www.cistrail.org" target="_blank"><img src="http://res.cloudinary.com/due1qfixq/image/upload/v1493160359/8d3ba2d82ea92e1caed670da96e670f9_dhyvuy.jpg" alt="FM Clinton-Ionia-Shiawassee"></a>
                   <div class="overlay-box">
                     <div class="user-info">
-                      <div class="text">Volunteer</div>
-                      <h4>Robert Florian</h4>
+                      <div class="text">CIS</div>
+                      <h4>FM Clinton-Ionia-Shiawassee</h4>
                     </div>
                     <ul class="social-icon-two">
-                      <li><a href="https://www.facebook.com/robboflo"><span class="fa fa-facebook"></span></a></li>
-                      <li><a href="https://twitter.com/mirealestaterob"><span class="fa fa-twitter"></span></a></li>
+                      <li><a href="http://www.cistrail.org/" target="_blank"><span class="fa fa-external-link"></span></a></li>
+                      <li><a href="https://www.facebook.com/fmcistrail/" target="_blank"><span class="fa fa-facebook"></span></a></li>
                     </ul>
                   </div>
                 </div>
@@ -210,16 +219,15 @@
             </div>
             <div class="team-member col-md-4 col-sm-6 col-xs-12">
               <div class="inner-box">
-                <div class="image-box"><img src="https://res.cloudinary.com/due1qfixq/image/upload/v1491535395/George_piidhn.png" alt="George Piidhin">
+                <div class="image-box"><a href="http://www.fredmeijerheartlandtrail.org" target="_blank"><img src="http://res.cloudinary.com/due1qfixq/image/upload/v1494299533/9311588686_1e95368825_k_ndcavd.jpg" alt="FM Heartland Trail"></a>
                   <div class="overlay-box">
                     <div class="user-info">
-                      <div class="text">Volunteer</div>
-                      <h4>George Raimer</h4>
+                      <div class="text">FMHT</div>
+                      <h4>FM Heartland Trail</h4>
                     </div>
                     <ul class="social-icon-two">
-                      <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                      <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                      <li><a href="http://www.westmichigantrails.com/Fred-Meijer-Heartland-Trail-62.php" target="_blank"><span class="fa fa-external-link"></span></a></li>
+                      <li><a href="https://www.facebook.com/Fred-Meijer-Heartland-Trail-106243959468119/" target="_blank"><span class="fa fa-facebook"></span></a></li>
                     </ul>
                   </div>
                 </div>
@@ -227,16 +235,15 @@
             </div>
             <div class="team-member col-md-4 col-sm-6 col-xs-12">
               <div class="inner-box">
-                <div class="image-box"><img src="http://res.cloudinary.com/due1qfixq/image/upload/v1491533062/IMG_2704_uldc0r.jpg" alt="Alan Rumbaugh">
+                <div class="image-box"><a href="http://www.lowellareatrailway.org" target="_blank"><img src="http://res.cloudinary.com/due1qfixq/image/upload/v1493159756/IMG_2125_emlkmv.jpg" alt="Lowell Area Rec. Authority"></a>
                   <div class="overlay-box">
                     <div class="user-info">
-                      <div class="text">Volunteer</div>
-                      <h4>Alan Rumbaugh</h4>
+                      <div class="text">LARA</div>
+                      <h4>Lowell Area Rec. Authority</h4>
                     </div>
                     <ul class="social-icon-two">
-                      <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                      <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                      <li><a href="http://www.lowellareatrailway.org/" target="_blank"><span class="fa fa-external-link"></span></a></li>
+                      <li><a href="https://www.facebook.com/forwardlowell/" target="_blank"><span class="fa fa-facebook"></span></a></li>
                     </ul>
                   </div>
                 </div>
@@ -245,79 +252,63 @@
           </div>
         </div>
       </section>
-      <footer class="main-footer">
-        <div class="auto-container">
-          <div class="widgets-section">
-            <div class="row clearfix">
-              <div class="big-column col-md-6 col-sm-12 col-xs-12">
-                <div class="row clearfix">
-                  <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer-widget about-widget">
-                      <div class="footer-logo">
-                        <figure><a href="index.html"><img src="images/logo-2.png" alt=""></a></figure>
-                      </div>
+    </div>
+    <footer class="main-footer">
+      <div class="auto-container">
+        <div class="widgets-section">
+          <div class="row clearfix">
+            <div class="big-column col-md-12 col-sm-12 col-xs-12">
+              <div class="row clearfix">
+                <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                  <div class="footer-widget gallery-widget">
+                    <h2>Instagram</h2>
+                    <div class="widget-content">
                       <div class="widget-content">
-                        <div class="text">
-                          <p>Lifting people social challenge democracy micro fight against malnutrition, think tank social innovation global health truth dignity civic engagement.</p>
-                          <div class="call-number">Call us <span>+04 2345 6789</span></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer-widget posts-widget">
-                      <h2>LATEST POSTS</h2>
-                      <div class="widget-content">
-                        <div class="posts">
-                          <div class="post">
-                            <figure class="post-thumb"><img src="images/resource/post-thumb-1.jpg" alt=""></figure>
-                            <div class="desc-text"><a href="#">Recycling Plastic Bottles</a></div>
-                            <div class="time">26.11.2016</div>
-                          </div>
-                          <div class="post">
-                            <figure class="post-thumb"><img src="images/resource/post-thumb-2.jpg" alt=""></figure>
-                            <div class="desc-text"><a href="#">Recycling Plastic Bottles</a></div>
-                            <div class="time">26.11.2016</div>
-                          </div>
-                          <div class="post">
-                            <figure class="post-thumb"><img src="images/resource/post-thumb-3.jpg" alt=""></figure>
-                            <div class="desc-text"><a href="#">Recycling Plastic Bottles</a></div>
-                            <div class="time">26.11.2016</div>
-                          </div>
+                        <div class="images-outer clearfix">
+                          <script src="//lightwidget.com/widgets/lightwidget.js"></script>
+                          <iframe class="lightwidget-widget" src="//lightwidget.com/widgets/026e977d32b4593c928356a384af77c7.html" scrolling="no" allowtransparency="true" style="width: 100%; border: 0; overflow: hidden;"></iframe>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="big-column col-md-6 col-sm-12 col-xs-12">
-                <div class="row clearfix">
-                  <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer-widget gallery-widget">
-                      <h2>Instagram</h2>
-                      <div class="widget-content">
-                        <div class="widget-content">
-                          <div class="images-outer clearfix">
-                            <script src="//lightwidget.com/widgets/lightwidget.js"></script>
-                            <iframe class="lightwidget-widget" src="//lightwidget.com/widgets/026e977d32b4593c928356a384af77c7.html" scrolling="no" allowtransparency="true" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+                <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                  <div class="footer-widget contact-widget">
+                    <div class="widget-content">
+                      <div class="newsletter-one no-margin-top" id="mc_embed_signup">
+                        <form class="validate" id="mc-embedded-subscribe-form" action="//fmrvrt.us15.list-manage.com/subscribe/post?u=bb013089d2be0521f27bd04ee&amp;id=698886a04f" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+                          <div class="form-group" id="mc_embed_signup_scroll">
+                            <h2>Subscribe to our mailing list</h2>
+                            <div class="mc-field-group">
+                              <input class="required email" id="mce-EMAIL" placeholder="Email Address" type="email" value="" name="EMAIL">
+                              <input class="button theme-btn fa-fa-airplane subscribe-button" id="mc-embedded-subscribe" placeholder="Email Address" type="submit" name="subscribe">
+                            </div>
+                            <div class="clear" id="mce-responses">
+                              <div class="response" id="mce-error-response" style="display:none;"></div>
+                              <div class="response" id="mce-success-response" style="display:none;"></div>
+                            </div>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                              <input type="text" name="b_bb013089d2be0521f27bd04ee_698886a04f" tabindex="-1" value="">
+                            </div>
+                            <div class="clear"></div>
                           </div>
-                        </div>
+                        </form>
                       </div>
                     </div>
                   </div>
-                  <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer-widget contact-widget">
-                      <h2>SUBSCRIBE</h2>
+                </div>
+                <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                  <div class="footer-widget gallery-widget">
+                    <h2>Documents</h2>
+                    <div class="widget-content">
                       <div class="widget-content">
-                        <div class="text">Design thinking diversification efficient recognize potential communities human potential governance change.</div>
-                        <div class="newsletter-one">
-                          <form method="post" action="contact.html">
-                            <div class="form-group">
-                              <input type="email" name="email" value="" placeholder="Enter your Email" required=""> 
-                              <button class="theme-btn" type="submit"><span class="fa fa-paper-plane-o"></span></button>
-                            </div>
-                          </form>
-                        </div>
+                        <ul>
+                          <li><a href="https://drive.google.com/drive/folders/0B03-djLC8T3XNkw2eS1ZSm9rWW8?usp=sharing" target="_blank">Agenda Minutes</a></li>
+                          <li><a href="https://drive.google.com/drive/folders/0B03-djLC8T3XSm1mSGZPMF9fcTg?usp=sharing" target="_blank">By Laws</a></li>
+                          <li><a>Contact Us</a></li>
+                          <li><a>Benefits of Membership</a></li>
+                          <li><a>Affiliates</a></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -326,25 +317,25 @@
             </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <div class="auto-container">
-            <div class="copyright-text">&copy; 2017 Podgorica. All Rights Reserved.</div>
-          </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="auto-container">
+          <div class="copyright-text">&copy; 2017 FMRVRT. All Rights Reserved.</div>
         </div>
-      </footer>
-    </div>
-    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-up"></span></div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/revolution.min.js"></script>
-    <script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/jquery.fancybox-media.js"></script>
-    <script src="js/owl.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/appear.js"></script>
-    <script src="js/jquery.mixitup.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/app.js" type="text/js"></script>
+      </div>
+    </footer>
   </body>
+  <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-up"></span></div>
+  <script src="js/app.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/revolution.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.fancybox-media.js"></script>
+  <script src="js/owl.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/appear.js"></script>
+  <script src="js/jquery.mixitup.js"></script>
+  <script src="js/script.js"></script>
 </html>

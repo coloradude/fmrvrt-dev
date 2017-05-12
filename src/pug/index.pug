@@ -3,60 +3,7 @@ extends layout.pug
 block content
   .page-wrapper
     .preloader
-    header.main-header
-      //- .header-top
-      //-   .auto-container
-      //-     .clearfix
-      //-       .top-left
-      //-         ul.clearfix
-      //-           li
-      //-             span.icon.flaticon-technology-1
-      //-             | +04 2345 6789
-      //-           li
-      //-             span.icon.flaticon-interface
-      //-             | info@podgorica.com
-      //-       .top-right
-      //-         .social-icon
-      //-           a(href='#')
-      //-             span.fa.fa-facebook
-      //-           a(href='#')
-      //-             span.fa.fa-twitter
-      //-           a(href='#')
-      //-             span.fa.fa-google-plus
-      //-           a(href='#')
-      //-             span.fa.fa-pinterest-p
-      //-           a(href='#')
-      //-             span.fa.fa-youtube-play
-      .main-box
-        .auto-container
-          .outer-container.clearfix
-            .logo-box
-              .logo
-                a(href='index.html')
-                  img(src='images/placeholder_logo.jpg', alt='River Valley Trails Logo')
-            .nav-outer.clearfix
-              nav.main-menu
-                .navbar-header
-                  button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-                    span.icon-bar
-                    span.icon-bar
-                    span.icon-bar
-                .navbar-collapse.collapse.clearfix
-                  ul.navigation.clearfix
-                    li.current
-                      a(href='/') Home
-                    li
-                      a(href='/events.html') Events
-                    li
-                      a(href='/trail-map.html') Trail Map
-                    li
-                      a(href='/our-board.html') Our Board
-                    li
-                      a(href='mailto:fmrvrtfriends@gmail.com') Contact Us
-                    li
-                      a(href='www.lowellareatrailway.org') Lowell Area Recreation
-              .btn-outer
-                a.theme-btn.quote-btn.btn-style-one(href='donate.html') DONATE
+    
     section.main-slider(data-start-height='850', data-slide-overlay='yes')
       .tp-banner-container
         .tp-banner
@@ -70,9 +17,9 @@ block content
               .tp-caption.sfr.sfb.tp-resizeme(data-x='left', data-hoffset='400', data-y='center', data-voffset='20', data-speed='1500', data-start='500', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.01', data-endelementdelay='0.3', data-endspeed='1200', data-endeasing='Power4.easeIn')
                 //- .text.text-center Start recycling today and protect our environment
               .tp-caption.sfr.sfb.tp-resizeme(data-x='left', data-hoffset='400', data-y='center', data-voffset='90', data-speed='1500', data-start='1000', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.01', data-endelementdelay='0.3', data-endspeed='1200', data-endeasing='Power4.easeIn')
-                a.theme-btn.btn-style-two(href='#') Donate Today
+                a.theme-btn.btn-style-two(href='https://paypal.me/fmrvrt') Donate Today
                 |  &ensp;&ensp; 
-                a.theme-btn.btn-style-three(href='#') Learn More
+                a.theme-btn.btn-style-three(href='https://drive.google.com/file/d/0B03-djLC8T3XcFBnUVRFck91X3M/view?usp=sharing' target='_blank') Learn More
             //- li(data-transition='fade', data-slotamount='1', data-masterspeed='1000', data-thumb='images/main-slider/image-2.jpg', data-saveperformance='off', data-title='Awesome Title Here')
             //-   img(src='images/main-slider/image-2.jpg', alt='', data-bgposition='center top', data-bgfit='cover', data-bgrepeat='no-repeat')
             //-   .tp-caption.sfl.sfb.tp-resizeme(data-x='center', data-hoffset='0', data-y='center', data-voffset='-80', data-speed='1500', data-start='500', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.01', data-endelementdelay='0.3', data-endspeed='1200', data-endeasing='Power4.easeIn')
@@ -128,19 +75,19 @@ block content
           |  IS NOW
         .text The only way to finish this trail is to take action!
         .buttons-box
-          a.theme-btn.btn-style-two(href='#') Donate Today
+          a.theme-btn.btn-style-two(href='https://paypal.me/fmrvrt') Donate Today
           |  
-          a.theme-btn.btn-style-three(href='#') Learn More
+          a.theme-btn.btn-style-three(href='https://drive.google.com/file/d/0B03-djLC8T3XcFBnUVRFck91X3M/view?usp=sharing' target='_blank') Learn More
 
-    section.instagram-feed
-      .auto-container
-        .sec-title-two
-          h3 Follow us on Instagram
-          h2 PHOTOS FROM THE TRAIL
-        //- script(src='//lightwidget.com/widgets/lightwidget.js')
-        //- iframe.lightwidget-widget(src='//lightwidget.com/widgets/026e977d32b4593c928356a384af77c7.html', scrolling='no', allowtransparency='true', style='width: 100%; border: 0; overflow: hidden;')
-        script(src='https://snapwidget.com/js/snapwidget.js')
-        iframe.snapwidget-widget(src='https://snapwidget.com/embed/366557', allowtransparency='true', frameborder='0', scrolling='no', style='border:none; overflow:hidden; width:100%; ')
+    //- section.instagram-feed
+    //-   .auto-container
+    //-     .sec-title-two
+    //-       h3 Follow us on Instagram
+    //-       h2 PHOTOS FROM THE TRAIL
+    //-     //- script(src='//lightwidget.com/widgets/lightwidget.js')
+    //-     //- iframe.lightwidget-widget(src='//lightwidget.com/widgets/026e977d32b4593c928356a384af77c7.html', scrolling='no', allowtransparency='true', style='width: 100%; border: 0; overflow: hidden;')
+    //-     script(src='https://snapwidget.com/js/snapwidget.js')
+    //-     iframe.snapwidget-widget(src='https://snapwidget.com/embed/366557', allowtransparency='true', frameborder='0', scrolling='no', style='border:none; overflow:hidden; width:100%; ')
 
 
     section#gallery-section.gallery-section
@@ -151,121 +98,183 @@ block content
           .filters
             ul.filter-tabs.clearfix
               li.filter.active(data-role='button', data-filter='all') All
-              li.filter(data-role='button', data-filter='.engine-service') Grand River Valley Rail Trail
-              li.filter(data-role='button', data-filter='.car-service') Flat River Valley Rail Trail
-              li.filter(data-role='button', data-filter='.brake-service') Lowell Area Recreation Authority
+              li.filter(data-role='button', data-filter='.rvtb') River Valley Trail Boss
+              li.filter(data-role='button', data-filter='.grvrt') Grand River Valley Rail Trail
+              li.filter(data-role='button', data-filter='.frvrt') Flat River Valley Rail Trail
+              li.filter(data-role='button', data-filter='.lara') Lowell Area Recreation Authority
+
       .images-container
         .filter-list.clearfix
-          .col-lg-6.col-md-6.col-sm-12.col-xs-12.gallery-item.mix.mix_all.all
+          .col-lg-6.col-md-6.col-sm-12.col-xs-12.gallery-item.mix.mix_all.all.rvtb
             .inner-box
-              .image
-                img(src='images/gallery/1.jpg', alt='')
+              .image(style='background-image: url(https://68.media.tumblr.com/c6254d9ab49fae7e9fe1dc0e8a11c4d0/tumblr_opm4acXDi11woz4ijo1_1280.jpg')
+                img(src='images/gallery/2.jpg'  alt='')
                 .overlay-box
                   .content
                     h3
-                      a(href='project-single.html') Plant Seedling And Growth
+                      a(href='https://rivervalleytrailboss.tumblr.com/post/160427716477/motation' target='_blank') Motation
                     |  
-                    span.category Nature, Plant Seedling
-          .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.engine-service.Ecology
+                    span.category River Valley Trail Boss
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.grvrt
             .inner-box
-              .image
+              .image(style='background-image: url(http://res.cloudinary.com/due1qfixq/image/upload/v1493160359/8d3ba2d82ea92e1caed670da96e670f9_dhyvuy.jpg)')
                 img(src='images/gallery/2.jpg', alt='')
                 .overlay-box
                   .content
                     h3
-                      a(href='project-single.html') Plant Seedling And Growth
+                      a(href='https://flatriverrailtrail.tumblr.com/post/160228124660/our-trail-network' target='_blank') fred meijer grand river valley rail trail__https
                     |  
-                    span.category Nature, Plant Seedling
-          .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.car-service.engine-service
+                    span.category Flat River Valley Rail Trail News
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.frvrt
             .inner-box
-              .image
+              .image(style='background-image: url(https://68.media.tumblr.com/5b6753ed4fb42445fcb6db2e908f98da/tumblr_opbrrnyCQw1wozz9so1_400.jpg)')
                 img(src='images/gallery/3.jpg', alt='')
                 .overlay-box
                   .content
                     h3
-                      a(href='project-single.html') Plant Seedling And Growth
+                      a(href='https://grandrivertrail.tumblr.com/post/160226466688/one-of-our-members-got-some-nice-photos-last-week' target='_blank') One of our members got some nice photos last week riding from Saranac to Pewamo. Thanks for the contribution, Gail!
                     |  
-                    span.category Nature, Plant Seedling
-          .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.brake-service.car-service
+                    span.category Grand River Valley Rail Trail News
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.lara
             .inner-box
-              .image
-                img(src='images/gallery/4.jpg', alt='')
+              .image(style = 'background-image: url(https://68.media.tumblr.com/74b43540c9cb295e4ae5d0f910e62c32/tumblr_opm4knlhu71wozyrqo1_1280.jpg)')
+                img( src='images/gallery/2.jpg' , alt='')
                 .overlay-box
                   .content
                     h3
-                      a(href='project-single.html') Plant Seedling And Growth
+                      a(href='https://lowelllara.tumblr.com/post/160427912227/meet-me-at-spaghetti-junction-just-follow-the' target='_blank') Meet me at spaghetti junction. Just follow the map.
                     |  
-                    span.category Nature, Plant Seedling
-          .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.battery-service.brake-service
+                    span.category Lowell Area Recreation Authority News
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.rvtb
             .inner-box
-              .image
+              .image(style = 'background-image: url(https://68.media.tumblr.com/fee9bc8156b56824603f9349bf624a47/tumblr_opm40nLHkF1woz4ijo1_1280.jpg)')
                 img(src='images/gallery/5.jpg', alt='')
                 .overlay-box
                   .content
                     h3
-                      a(href='project-single.html') Plant Seedling And Growth
+                      a(href='https://rivervalleytrailboss.tumblr.com/post/160427538447/my-name-is-robert-and-i-want-a-chipper-just-like') My name is Robert, and I want a chipper. Just like this one
                     |  
-                    span.category Nature, Plant Seedling
+                    span.category The Director's Chair
+          //- .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.all.rvtb
+          //-   .inner-box
+          //-     .image
+          //-       img(src='https://68.media.tumblr.com/fee9bc8156b56824603f9349bf624a47/tumblr_opm40nLHkF1woz4ijo1_1280.jpg', alt='')
+          //-       .overlay-box
+          //-         .content
+          //-           h3
+          //-             a(href='https://rivervalleytrailboss.tumblr.com/post/160427538447/my-name-is-robert-and-i-want-a-chipper-just-like') My name is Robert, and I want a chipper. Just like this one
+          //-           |  
+          //-           span.category River Valley Trail Boss
+
+
+      //- .images-container
+      //-   .filter-list.clearfix
+      //-     .col-lg-6.col-md-6.col-sm-12.col-xs-12.gallery-item.mix.mix_all.all.rvtb
+      //-       .inner-box
+      //-         .image
+      //-           img(src='images/gallery/1.jpg', alt='')
+      //-           .overlay-box
+      //-             .content
+      //-               h3
+      //-                 a(href='') Plant Seedling And Growth
+      //-               |  
+      //-               span.category Nature, Plant Seedling
+      //-     .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.grvrt
+      //-       .inner-box
+      //-         .image
+      //-           img(src='images/gallery/2.jpg', alt='')
+      //-           .overlay-box
+      //-             .content
+      //-               h3
+      //-                 a(href='project-single.html') Plant Seedling And Growth
+      //-               |  
+      //-               span.category Nature, Plant Seedling
+      //-     .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.frvrt
+      //-       .inner-box
+      //-         .image
+      //-           img(src='images/gallery/3.jpg', alt='')
+      //-           .overlay-box
+      //-             .content
+      //-               h3
+      //-                 a(href='project-single.html') Plant Seedling And Growth
+      //-               |  
+      //-               span.category Nature, Plant Seedling
+      //-     .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.lara
+      //-       .inner-box
+      //-         .image
+      //-           img(src='images/gallery/4.jpg', alt='')
+      //-           .overlay-box
+      //-             .content
+      //-               h3
+      //-                 a(href='project-single.html') Plant Seedling And Growth
+      //-               |  
+      //-               span.category Nature, Plant Seedling
+      //-     .col-lg-3.col-md-3.col-sm-6.col-xs-12.gallery-item.mix.mix_all.rvbt
+      //-       .inner-box
+      //-         .image
+      //-           img(src='images/gallery/5.jpg', alt='')
+      //-           .overlay-box
+      //-             .content
+      //-               h3
+      //-                 a(href='project-single.html') Plant Seedling And Growth
+      //-               |  
+      //-               span.category Nature, Plant Seedling
 
 
     section.team-section
       .auto-container
         .sec-title
           h3 The Michigan Trail Family
-          h2 All Our Network
+          h2 Our Regional Network
         .row.clearfix
-          .team-member.col-md-4.col-sm-6.col-xs-12
-            .inner-box
-              .image-box
-                img(src='https://res.cloudinary.com/due1qfixq/image/upload/v1491534953/IMG_2763_xez0vb.jpg', alt='')
-                .overlay-box
-                  .user-info
-                    .text Volunteer
-                    h4 Robert Florian
-                  ul.social-icon-two
-                    li
-                      a(href='https://www.facebook.com/robboflo')
-                        span.fa.fa-facebook
-                    li
-                      a(href='https://twitter.com/mirealestaterob')
-                        span.fa.fa-twitter
-          .team-member.col-md-4.col-sm-6.col-xs-12
-            .inner-box
-              .image-box
-                img(src='https://res.cloudinary.com/due1qfixq/image/upload/v1491535395/George_piidhn.png', alt='George Piidhin')
-                .overlay-box
-                  .user-info
-                    .text Volunteer
-                    h4 George Raimer
-                  ul.social-icon-two
-                    li
-                      a(href='#')
-                        span.fa.fa-facebook
-                    li
-                      a(href='#')
-                        span.fa.fa-twitter
-                    li
-                      a(href='#')
-                        span.fa.fa-google-plus
-          .team-member.col-md-4.col-sm-6.col-xs-12
-            .inner-box
-              .image-box
-                img(src='http://res.cloudinary.com/due1qfixq/image/upload/v1491533062/IMG_2704_uldc0r.jpg', alt='Alan Rumbaugh')
-                .overlay-box
-                  .user-info
-                    .text Volunteer
-                    h4 Alan Rumbaugh
-                  ul.social-icon-two
-                    li
-                      a(href='#')
-                        span.fa.fa-facebook
-                    li
-                      a(href='#')
-                        span.fa.fa-twitter
-                    li
-                      a(href='#')
-                        span.fa.fa-google-plus
 
+          -
+            var trails = [
+              {
+                name: 'FM Clinton-Ionia-Shiawassee', 
+                url: 'http://www.cistrail.org', 
+                abbreviation: 'CIS', 
+                image: 'http://res.cloudinary.com/due1qfixq/image/upload/v1493160359/8d3ba2d82ea92e1caed670da96e670f9_dhyvuy.jpg',
+                facebook: 'https://www.facebook.com/fmcistrail/',
+                website: 'http://www.cistrail.org/'
+              },
+              {
+                name: 'FM Heartland Trail', 
+                url: 'http://www.fredmeijerheartlandtrail.org', 
+                abbreviation: 'FMHT', 
+                image: 'http://res.cloudinary.com/due1qfixq/image/upload/v1494299533/9311588686_1e95368825_k_ndcavd.jpg',
+                website: 'http://www.westmichigantrails.com/Fred-Meijer-Heartland-Trail-62.php',
+                facebook: 'https://www.facebook.com/Fred-Meijer-Heartland-Trail-106243959468119/'
+              },
+              {
+                name: 'Lowell Area Rec. Authority', 
+                url: 'http://www.lowellareatrailway.org', 
+                abbreviation: 'LARA', 
+                image:'http://res.cloudinary.com/due1qfixq/image/upload/v1493159756/IMG_2125_emlkmv.jpg',
+                website: 'http://www.lowellareatrailway.org/',
+                facebook: 'https://www.facebook.com/forwardlowell/'
+              }  
+            ]
+
+          each trail in trails 
+
+            .team-member.col-md-4.col-sm-6.col-xs-12
+              .inner-box
+                .image-box
+                  a(href=trail.url target='_blank')
+                    img(src=trail.image, alt=trail.name)
+                  .overlay-box
+                    .user-info
+                      .text= trail.abbreviation
+                      h4= trail.name
+                    ul.social-icon-two
+                      li
+                        a(href=trail.website target='_blank')
+                          span.fa.fa-external-link
+                      li
+                        a(href=trail.facebook target='_blank')
+                          span.fa.fa-facebook
+                  
 
 
     //- section.events-section(style='background-image:url(images/background/2.jpg)')
@@ -451,86 +460,4 @@ block content
     //-                     a(href='#')
     //-                       span.icon.flaticon-heart-1
     //-                       | 10
-    footer.main-footer
-      .auto-container
-        .widgets-section
-          .row.clearfix
-            .big-column.col-md-6.col-sm-12.col-xs-12
-              .row.clearfix
-                .footer-column.col-md-6.col-sm-6.col-xs-12
-                  .footer-widget.about-widget
-                    .footer-logo
-                      figure
-                        a(href='index.html')
-                          img(src='images/logo-2.png', alt='')
-                    .widget-content
-                      .text
-                        p
-                          | Lifting people social challenge democracy micro fight against malnutrition, think tank social innovation global health truth dignity civic engagement.
-                        .call-number
-                          | Call us 
-                          span +04 2345 6789
-                .footer-column.col-md-6.col-sm-6.col-xs-12
-                  .footer-widget.posts-widget
-                    h2 LATEST POSTS
-                    .widget-content
-                      .posts
-                        .post
-                          figure.post-thumb
-                            img(src='images/resource/post-thumb-1.jpg', alt='')
-                          .desc-text
-                            a(href='#') Recycling Plastic Bottles
-                          .time 26.11.2016
-                        .post
-                          figure.post-thumb
-                            img(src='images/resource/post-thumb-2.jpg', alt='')
-                          .desc-text
-                            a(href='#') Recycling Plastic Bottles
-                          .time 26.11.2016
-                        .post
-                          figure.post-thumb
-                            img(src='images/resource/post-thumb-3.jpg', alt='')
-                          .desc-text
-                            a(href='#') Recycling Plastic Bottles
-                          .time 26.11.2016
-            .big-column.col-md-6.col-sm-12.col-xs-12
-              .row.clearfix
-                .footer-column.col-md-6.col-sm-6.col-xs-12
-                  .footer-widget.gallery-widget
-                    h2 Instagram
-                    .widget-content
-                      .widget-content
-                        .images-outer.clearfix
-                          script(src='//lightwidget.com/widgets/lightwidget.js')
-                          iframe.lightwidget-widget(src='//lightwidget.com/widgets/026e977d32b4593c928356a384af77c7.html', scrolling='no', allowtransparency='true', style='width: 100%; border: 0; overflow: hidden;')
-                .footer-column.col-md-6.col-sm-6.col-xs-12
-                  .footer-widget.contact-widget
-                    h2 SUBSCRIBE
-                    .widget-content
-                      .text
-                        | Design thinking diversification efficient recognize potential communities human potential governance change.
-                      .newsletter-one
-                        form(method='post', action='contact.html')
-                          .form-group
-                            input(type='email', name='email', value='', placeholder='Enter your Email', required='')
-                            |  
-                            button.theme-btn(type='submit')
-                              span.fa.fa-paper-plane-o
-      .footer-bottom
-        .auto-container
-          .copyright-text &copy; 2017 Podgorica. All Rights Reserved.
-  .scroll-to-top.scroll-to-target(data-target='html')
-    span.fa.fa-long-arrow-up
-  script(src='js/jquery.js')
-  script(src='js/bootstrap.min.js')
-  script(src='js/jquery.mCustomScrollbar.concat.min.js')
-  script(src='js/revolution.min.js')
-  script(src='js/jquery.fancybox.pack.js')
-  script(src='js/jquery.fancybox-media.js')
-  script(src='js/owl.js')
-  script(src='js/wow.js')
-  script(src='js/appear.js')
-  script(src='js/jquery.mixitup.js')
-  script(src='js/script.js')
-  script(src='js/app.js' type='text/js')
-
+    

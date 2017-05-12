@@ -18,5 +18,136 @@
     <title>Fred Meijer River Valley Trails</title>
   </head>
   <body>
+    <header class="main-header">
+      <div class="main-box">
+        <div class="auto-container">
+          <div class="outer-container clearfix">
+            <div class="logo-box">
+              <div class="logo"><a href="index.html"><img src="images/placeholder_logo.jpg" alt="River Valley Trails Logo"></a></div>
+            </div>
+            <div class="nav-outer clearfix">
+              <nav class="main-menu">
+                <div class="navbar-header">
+                  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="navbar-collapse collapse clearfix">
+                  <ul class="navigation clearfix">
+                    <li id="nav-home"><a href="/">Home</a></li>
+                    <li id="nav-about"><a href="https://drive.google.com/file/d/0B03-djLC8T3XcFBnUVRFck91X3M/view?usp=sharing" target="_blank">About</a></li>
+                    <li id="nav-events"><a href="/events.html">Events</a></li>
+                    <li id="nav-trail-map"><a href="/trail-map.html">Trail Map</a></li>
+                    <li id="nav-our-board"><a href="/our-board.html">Our Board</a></li>
+                    <li><a href="/contact-us.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="btn-outer"><a class="theme-btn quote-btn btn-style-one" href="https://paypal.me/fmrvrt">DONATE</a></div>
+            </div>
+          </div>
+        </div>
+        <script>
+          var path = window.location.pathname
+          switch(path) {
+            case '/':
+              document.querySelector('#nav-home').classList.add('current')
+              break
+            case '/events.html':
+              document.querySelector('#nav-events').classList.add('current')
+              break
+            case '/trail-map.html':
+              document.querySelector('#nav-trail-map').classList.add('current')
+              break
+            case '/our-board.html':
+              document.querySelector('#nav-our-board').classList.add('current')
+              break
+            }
+          
+        </script>
+      </div>
+    </header>
+    <footer class="main-footer">
+      <div class="auto-container">
+        <div class="widgets-section">
+          <div class="row clearfix">
+            <div class="big-column col-md-12 col-sm-12 col-xs-12">
+              <div class="row clearfix">
+                <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                  <div class="footer-widget gallery-widget">
+                    <h2>Instagram</h2>
+                    <div class="widget-content">
+                      <div class="widget-content">
+                        <div class="images-outer clearfix">
+                          <script src="//lightwidget.com/widgets/lightwidget.js"></script>
+                          <iframe class="lightwidget-widget" src="//lightwidget.com/widgets/026e977d32b4593c928356a384af77c7.html" scrolling="no" allowtransparency="true" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                  <div class="footer-widget contact-widget">
+                    <div class="widget-content">
+                      <div class="newsletter-one no-margin-top" id="mc_embed_signup">
+                        <form class="validate" id="mc-embedded-subscribe-form" action="//fmrvrt.us15.list-manage.com/subscribe/post?u=bb013089d2be0521f27bd04ee&amp;id=698886a04f" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+                          <div class="form-group" id="mc_embed_signup_scroll">
+                            <h2>Subscribe to our mailing list</h2>
+                            <div class="mc-field-group">
+                              <input class="required email" id="mce-EMAIL" placeholder="Email Address" type="email" value="" name="EMAIL">
+                              <input class="button theme-btn fa-fa-airplane subscribe-button" id="mc-embedded-subscribe" placeholder="Email Address" type="submit" name="subscribe">
+                            </div>
+                            <div class="clear" id="mce-responses">
+                              <div class="response" id="mce-error-response" style="display:none;"></div>
+                              <div class="response" id="mce-success-response" style="display:none;"></div>
+                            </div>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                              <input type="text" name="b_bb013089d2be0521f27bd04ee_698886a04f" tabindex="-1" value="">
+                            </div>
+                            <div class="clear"></div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                  <div class="footer-widget gallery-widget">
+                    <h2>Documents</h2>
+                    <div class="widget-content">
+                      <div class="widget-content">
+                        <ul>
+                          <li><a href="https://drive.google.com/drive/folders/0B03-djLC8T3XNkw2eS1ZSm9rWW8?usp=sharing" target="_blank">Agenda Minutes</a></li>
+                          <li><a href="https://drive.google.com/drive/folders/0B03-djLC8T3XSm1mSGZPMF9fcTg?usp=sharing" target="_blank">By Laws</a></li>
+                          <li><a>Contact Us</a></li>
+                          <li><a>Benefits of Membership</a></li>
+                          <li><a>Affiliates</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="auto-container">
+          <div class="copyright-text">&copy; 2017 FMRVRT. All Rights Reserved.</div>
+        </div>
+      </div>
+    </footer>
   </body>
+  <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-up"></span></div>
+  <script src="js/app.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/revolution.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.fancybox-media.js"></script>
+  <script src="js/owl.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/appear.js"></script>
+  <script src="js/jquery.mixitup.js"></script>
+  <script src="js/script.js"></script>
 </html>

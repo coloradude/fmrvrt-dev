@@ -18,6 +18,200 @@ html
         Simpla('HkRvM1o6e')
     title Fred Meijer River Valley Trails
   body
+    header.main-header
+      //- .header-top
+      //-   .auto-container
+      //-     .clearfix
+      //-       .top-left
+      //-         ul.clearfix
+      //-           li
+      //-             span.icon.flaticon-technology-1
+      //-             | +04 2345 6789
+      //-           li
+      //-             span.icon.flaticon-interface
+      //-             | info@podgorica.com
+      //-       .top-right
+      //-         .social-icon
+      //-           a(href='#')
+      //-             span.fa.fa-facebook
+      //-           a(href='#')
+      //-             span.fa.fa-twitter
+      //-           a(href='#')
+      //-             span.fa.fa-google-plus
+      //-           a(href='#')
+      //-             span.fa.fa-pinterest-p
+      //-           a(href='#')
+      //-             span.fa.fa-youtube-play
+      .main-box
+        .auto-container
+          .outer-container.clearfix
+            .logo-box
+              .logo
+                a(href='index.html')
+                  img(src='images/placeholder_logo.jpg', alt='River Valley Trails Logo')
+            .nav-outer.clearfix
+              nav.main-menu
+                .navbar-header
+                  button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                .navbar-collapse.collapse.clearfix
+                  ul.navigation.clearfix
+                    li#nav-home
+                      a(href='/') Home
+                    li#nav-about
+                      a(href='https://drive.google.com/file/d/0B03-djLC8T3XcFBnUVRFck91X3M/view?usp=sharing' target='_blank') About
+                    li#nav-events
+                      a(href='/events.html') Events
+                    li#nav-trail-map
+                      a(href='/trail-map.html') Trail Map
+                    li#nav-our-board
+                      a(href='/our-board.html') Our Board
+                    li
+                      a(href='/contact-us.html') Contact Us
+              .btn-outer
+                a.theme-btn.quote-btn.btn-style-one(href='https://paypal.me/fmrvrt') DONATE
+        script.
+          var path = window.location.pathname
+          switch(path) {
+            case '/':
+              document.querySelector('#nav-home').classList.add('current')
+              break
+            case '/events.html':
+              document.querySelector('#nav-events').classList.add('current')
+              break
+            case '/trail-map.html':
+              document.querySelector('#nav-trail-map').classList.add('current')
+              break
+            case '/our-board.html':
+              document.querySelector('#nav-our-board').classList.add('current')
+              break
+            }
+
     block content
-    
+    footer.main-footer
+      .auto-container
+        .widgets-section
+          .row.clearfix
+            //- .big-column.col-md-6.col-sm-12.col-xs-12
+            //-   .row.clearfix
+            //-     .footer-column.col-md-6.col-sm-6.col-xs-12
+            //-       .footer-widget.about-widget
+            //-         .footer-logo
+            //-           figure
+            //-             a(href='index.html')
+            //-               img(src='images/logo-2.png', alt='')
+            //-         .widget-content
+            //-           .text
+            //-             p
+            //-               | Lifting people social challenge democracy micro fight against malnutrition, think tank social innovation global health truth dignity civic engagement.
+            //-             .call-number
+            //-               | Call us 
+            //-               span +04 2345 6789
+            //-     .footer-column.col-md-6.col-sm-6.col-xs-12
+            //-       .footer-widget.posts-widget
+            //-         h2 LATEST POSTS
+            //-         .widget-content
+            //-           .posts
+            //-             .post
+            //-               figure.post-thumb
+            //-                 img(src='images/resource/post-thumb-1.jpg', alt='')
+            //-               .desc-text
+            //-                 a(href='#') Recycling Plastic Bottles
+            //-               .time 26.11.2016
+            //-             .post
+            //-               figure.post-thumb
+            //-                 img(src='images/resource/post-thumb-2.jpg', alt='')
+            //-               .desc-text
+            //-                 a(href='#') Recycling Plastic Bottles
+            //-               .time 26.11.2016
+            //-             .post
+            //-               figure.post-thumb
+            //-                 img(src='images/resource/post-thumb-3.jpg', alt='')
+            //-               .desc-text
+            //-                 a(href='#') Recycling Plastic Bottles
+            //-               .time 26.11.2016
+            .big-column.col-md-12.col-sm-12.col-xs-12
+              .row.clearfix
+                .footer-column.col-md-4.col-sm-6.col-xs-12
+                  .footer-widget.gallery-widget
+                    h2 Instagram
+                    .widget-content
+                      .widget-content
+                        .images-outer.clearfix
+                          script(src='//lightwidget.com/widgets/lightwidget.js')
+                          iframe.lightwidget-widget(src='//lightwidget.com/widgets/026e977d32b4593c928356a384af77c7.html', scrolling='no', allowtransparency='true', style='width: 100%; border: 0; overflow: hidden;')
+                .footer-column.col-md-4.col-sm-6.col-xs-12
+                  .footer-widget.contact-widget
+                    //- h2 SUBSCRIBE
+                    .widget-content
+                      //- .text
+                      //-   | Design thinking diversification efficient recognize potential communities human potential governance change.
+                      //- .newsletter-one
+                      //-   form(method='post', action='contact.html')
+                      //-     .form-group
+                      //-       input(type='email', name='email', value='', placeholder='Enter your Email', required='')
+                      //-       |  
+                      //-       button.theme-btn(type='submit')
+                      //-         span.fa.fa-paper-plane-o
+                      #mc_embed_signup.newsletter-one.no-margin-top
+                        form#mc-embedded-subscribe-form.validate(action='//fmrvrt.us15.list-manage.com/subscribe/post?u=bb013089d2be0521f27bd04ee&id=698886a04f', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+                          #mc_embed_signup_scroll.form-group
+                            h2 Subscribe to our mailing list
+                            .mc-field-group
+                              //- label(for='mce-EMAIL')
+                              //-   //- | Email Address 
+                              //-   span.asterisk *
+                              //- |  
+                              input#mce-EMAIL.required.email(placeholder='Email Address' type='email', value='', name='EMAIL')
+                              input#mc-embedded-subscribe.button.theme-btn.fa-fa-airplane.subscribe-button(placeholder='Email Address' type='submit', name='subscribe')
+
+                            #mce-responses.clear
+                              #mce-error-response.response(style='display:none')
+                              #mce-success-response.response(style='display:none')
+                            div(style='position: absolute; left: -5000px;', aria-hidden='true')
+                              input(type='text',  name='b_bb013089d2be0521f27bd04ee_698886a04f', tabindex='-1', value='')
+                            .clear
+                              //- input#mc-embedded-subscribe.button.theme-btn.fa-fa-airplane(placeholder='Email Address' type='submit', name='subscribe')
+                                
+
+                .footer-column.col-md-4.col-sm-6.col-xs-12
+                  .footer-widget.gallery-widget
+                    h2 Documents
+                    .widget-content
+                      .widget-content
+                        ul
+                          li
+                            a(href='https://drive.google.com/drive/folders/0B03-djLC8T3XNkw2eS1ZSm9rWW8?usp=sharing' target='_blank') Agenda Minutes
+                          li
+                            a(href='https://drive.google.com/drive/folders/0B03-djLC8T3XSm1mSGZPMF9fcTg?usp=sharing' target='_blank') By Laws
+                          li
+                            a() Contact Us
+                          li
+                            a() Benefits of Membership
+                          li
+                            a() Affiliates
+
+      .footer-bottom
+        .auto-container
+          .copyright-text &copy; 2017 FMRVRT. All Rights Reserved.
+  .scroll-to-top.scroll-to-target(data-target='html')
+    span.fa.fa-long-arrow-up
+  script(src='js/app.js')
+  script(src='js/jquery.js')
+  script(src='js/bootstrap.min.js')
+  script(src='js/jquery.mCustomScrollbar.concat.min.js')
+  script(src='js/revolution.min.js')
+  script(src='js/jquery.fancybox.pack.js')
+  script(src='js/jquery.fancybox-media.js')
+  script(src='js/owl.js')
+  script(src='js/wow.js')
+  script(src='js/appear.js')
+  script(src='js/jquery.mixitup.js')
+  script(src='js/script.js')
+
+
+
+  
 

@@ -5,14 +5,16 @@ const stylus = require('gulp-stylus')
 const autoprefixer = require('gulp-autoprefixer')
 const pug = require('gulp-pug')
 const babel = require('gulp-babel')
+const uglify = require('gulp-uglify')
 
 gulp.task('js', function(){
   return gulp.src('src/js/*.js', { read: false })
     .pipe(plumber())
-    .pipe(browserify())
     .pipe(babel({
       presets: ['es2017']
     }))
+    .pipe(browserify())
+    //.pipe(uglify())
     .pipe(gulp.dest('dist/js'))
 })
 
